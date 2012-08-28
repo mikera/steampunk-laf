@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.mikera</groupId>
 	<artifactId>steampunk-laf</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>Steampunk Look and Feel</name>
 	<build>
 		<plugins>
@@ -11,7 +11,7 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<source>1.6</source>
+					<source>1.7</source>
 					<target>1.6</target>
 				</configuration>
 			</plugin>
@@ -26,7 +26,7 @@
 		<dependency>
 			<groupId>net.mikera</groupId>
 			<artifactId>mikera</artifactId>
-			<version>1.1-SNAPSHOT</version>
+			<version>1.3.0</version>
 		</dependency>
 	</dependencies>
 </project>
