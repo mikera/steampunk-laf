@@ -125,12 +125,12 @@ public class TestApp {
 		radioPanel.add(rb3);
 		radioPanel.add(rb4);
 		
-		DefaultListModel listModel=new DefaultListModel();
+		DefaultListModel<String> listModel=new DefaultListModel<String>();
 		listModel.addElement("Alpha");
 		listModel.addElement("Beta");
 		listModel.addElement("Gamma");
 		listModel.addElement("Delta");
-		JList jl1=new JList(listModel);
+		JList<String> jl1=new JList<String>(listModel);
 		jl1.setCellRenderer(new SteamPunkCellRenderer());
 		
 		split2.add(JSplitPane.TOP,radioPanel);

@@ -1,13 +1,6 @@
 package mikera.ui.steampunk;
 
 import java.awt.image.BufferedImage;
-import java.io.IOException;
-import java.net.URL;
-
-import javax.imageio.ImageIO;
-
-import mikera.ui.BufferedImageIcon;
-import mikera.util.Resource;
 import mikera.image.ImageFilters;
 import mikera.image.ImageUtils;
 import mikera.image.Op;
