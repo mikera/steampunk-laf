@@ -7,7 +7,8 @@ import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.ListCellRenderer;
 
-public class SteamPunkCellRenderer extends JLabel implements ListCellRenderer {
+@SuppressWarnings("serial")
+public class SteamPunkCellRenderer extends JLabel implements ListCellRenderer<String> {
 	protected boolean isSelected=false;
 	protected boolean hasFocus=false;
 	
@@ -19,7 +20,8 @@ public class SteamPunkCellRenderer extends JLabel implements ListCellRenderer {
 		this("");
 	}
 
-	public Component getListCellRendererComponent(JList list, Object value,
+	@Override
+	public Component getListCellRendererComponent(JList<? extends String> list, String value,
 			int index, boolean isSelected, boolean cellHasFocus) {
 		SteamPunkCellRenderer rend= new SteamPunkCellRenderer(value.toString());
 		if (isSelected) {

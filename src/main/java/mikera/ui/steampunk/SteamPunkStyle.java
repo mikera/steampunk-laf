@@ -2,10 +2,7 @@ package mikera.ui.steampunk;
 
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.FontFormatException;
 import java.awt.Insets;
-import java.io.IOException;
-
 import javax.swing.AbstractButton;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
@@ -124,7 +121,8 @@ public class SteamPunkStyle extends SynthStyle {
 	@Override
 	public void installDefaults(SynthContext context) {
 		super.installDefaults(context);
-		Region region=context.getRegion();
+		
+		// Region region=context.getRegion();
 		JComponent c=context.getComponent();
 		c.setForeground(getColorForState(context,ColorType.TEXT_FOREGROUND));
 		

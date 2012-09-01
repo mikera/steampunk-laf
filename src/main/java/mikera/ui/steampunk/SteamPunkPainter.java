@@ -27,10 +27,12 @@ public class SteamPunkPainter extends SynthPainter {
 
 	@Override
 	public void paintArrowButtonBackground(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// TODO
 	}
 	
 	@Override
 	public void paintArrowButtonBorder(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// TODO
 	}
 	
 	@Override
@@ -63,6 +65,7 @@ public class SteamPunkPainter extends SynthPainter {
 	
 	@Override
 	public void paintButtonBorder(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing, no special border painting
 	}
 	
 	@Override
@@ -87,6 +90,7 @@ public class SteamPunkPainter extends SynthPainter {
 	
 	@Override
 	public void paintCheckBoxBorder(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 	
 	
@@ -117,6 +121,7 @@ public class SteamPunkPainter extends SynthPainter {
 	
 	@Override
 	public void paintComboBoxBorder(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 	
 	@Override
@@ -147,6 +152,7 @@ public class SteamPunkPainter extends SynthPainter {
 	
 	@Override
 	public void paintEditorPaneBorder(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 	
 	@Override
@@ -156,6 +162,7 @@ public class SteamPunkPainter extends SynthPainter {
 	
 	@Override
 	public void paintFileChooserBorder(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 	
 	@Override
@@ -176,6 +183,7 @@ public class SteamPunkPainter extends SynthPainter {
 	
 	@Override
 	public void paintInternalFrameBorder(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 	
 	@Override
@@ -185,24 +193,29 @@ public class SteamPunkPainter extends SynthPainter {
 	
 	@Override
 	public void paintInternalFrameTitlePaneBorder(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 	
 	
 	@Override
 	public void paintLabelBackground(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 	
 	@Override
 	public void paintLabelBorder(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 	
 	
 	@Override
 	public void paintListBackground(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 	
 	@Override
 	public void paintListBorder(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 
 	// Menus
@@ -254,16 +267,19 @@ public class SteamPunkPainter extends SynthPainter {
 	
 	@Override
 	public void paintOptionPaneBackground(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 	
 	@Override
 	public void paintOptionPaneBorder(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 	
 	// Panel
 	
 	@Override
 	public void paintPanelBackground(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 	
 	@Override
@@ -278,11 +294,12 @@ public class SteamPunkPainter extends SynthPainter {
 	
 	@Override
 	public void paintPasswordFieldBackground(SynthContext context, Graphics g, int x, int y, int w, int h) {
-		paintTextFieldBackground(context,g,x,y,w,h);;
+		paintTextFieldBackground(context,g,x,y,w,h);
 	}
 	
 	@Override
 	public void paintPasswordFieldBorder(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 	
 
@@ -299,10 +316,12 @@ public class SteamPunkPainter extends SynthPainter {
 	
 	@Override
 	public void paintRadioButtonBackground(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 	
 	@Override
 	public void paintRadioButtonBorder(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 	
 	
@@ -324,6 +343,7 @@ public class SteamPunkPainter extends SynthPainter {
 	
 	@Override
 	public void paintRootPaneBorder(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 	
 	@Override
@@ -333,6 +353,7 @@ public class SteamPunkPainter extends SynthPainter {
 	
 	@Override
 	public void paintScrollBarBorder(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 
 	
@@ -343,22 +364,27 @@ public class SteamPunkPainter extends SynthPainter {
 	
 	@Override
 	public void paintScrollBarThumbBorder(SynthContext context, Graphics g, int x, int y, int w, int h, int orientation) {
+		// Do nothing
 	}
 	
 	@Override
 	public void paintScrollBarTrackBackground(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 	
 	@Override
 	public void paintScrollBarTrackBorder(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 	
 	@Override
 	public void paintScrollPaneBackground(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 	
 	@Override
 	public void paintScrollPaneBorder(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 	
 	@Override
@@ -368,6 +394,7 @@ public class SteamPunkPainter extends SynthPainter {
 	
 	@Override
 	public void paintSeparatorBorder(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 	
 	@Override
@@ -413,10 +440,12 @@ public class SteamPunkPainter extends SynthPainter {
 	
 	@Override
 	public void paintSplitPaneBackground(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 	
 	@Override
 	public void paintSplitPaneBorder(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 	
 	@Override
@@ -426,7 +455,7 @@ public class SteamPunkPainter extends SynthPainter {
 	
 	@Override
 	public void paintSplitPaneDividerForeground(SynthContext context, Graphics g, int x, int y, int w, int h, int orientation) {
-		
+		// Do nothing	
 	}
 	
 	@Override
@@ -451,6 +480,7 @@ public class SteamPunkPainter extends SynthPainter {
 	
 	@Override
 	public void paintTabbedPaneContentBorder(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 	
 	@Override public void paintTabbedPaneTabAreaBackground(SynthContext context, Graphics g, int x, int y, int w, int h) {
@@ -490,6 +520,7 @@ public class SteamPunkPainter extends SynthPainter {
 	}
 	
 	@Override public void paintTextAreaBorder(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 	
 	@Override public void paintTextFieldBackground(SynthContext context, Graphics g, int x, int y, int w, int h) {
@@ -497,6 +528,7 @@ public class SteamPunkPainter extends SynthPainter {
 	}
 	
 	@Override public void paintTextFieldBorder(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 	
 	@Override public void paintTextPaneBackground(SynthContext context, Graphics g, int x, int y, int w, int h) {
@@ -564,9 +596,11 @@ public class SteamPunkPainter extends SynthPainter {
 	}
 
 	@Override public void paintViewportBackground(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 	
 	@Override public void paintViewportBorder(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}
 
 
@@ -617,6 +651,7 @@ public class SteamPunkPainter extends SynthPainter {
 	}	
 	
 	public void drawAnyMenuItemBorder(SynthContext context, Graphics g, int x, int y, int w, int h) {
+		// Do nothing
 	}		
 	
 	public void drawAnyMenuBackground(SynthContext context, Graphics g, int x, int y, int w, int h) {
