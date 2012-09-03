@@ -5,6 +5,13 @@
 	<artifactId>steampunk-laf</artifactId>
 	<version>0.0.3-SNAPSHOT</version>
 	<name>Steampunk Look and Feel</name>
+	
+	<scm>
+		<connection>scm:git:git@github.com:mikera/steampunk-laf.git</connection>
+		<url>scm:git:git@github.com:mikera/steampunk-laf.git</url>
+		<developerConnection>scm:git:git@github.com:mikera/steampunk-laf.git</developerConnection>
+  	</scm>
+	
 	<build>
 		<plugins>
 			<plugin>
