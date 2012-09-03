@@ -7,9 +7,9 @@
 	<name>Steampunk Look and Feel</name>
 	
 	<scm>
-		<connection>scm:git:git@github.com:mikera/steampunk-laf.git</connection>
-		<url>scm:git:git@github.com:mikera/steampunk-laf.git</url>
-		<developerConnection>scm:git:git@github.com:mikera/steampunk-laf.git</developerConnection>
+		<connection>scm:git:git@github.com:mikera/${project.artifactId}.git</connection>
+		<url>scm:git:git@github.com:mikera/${project.artifactId}.git</url>
+		<developerConnection>scm:git:git@github.com:mikera/${project.artifactId}.git</developerConnection>
   	</scm>
 	
 	<build>
