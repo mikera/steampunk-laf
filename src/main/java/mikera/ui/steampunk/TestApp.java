@@ -12,6 +12,7 @@ public class TestApp {
 	/**
 	 * @param args
 	 */
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void main(String[] args) {
 		boolean use=true;
 		if (use) {
@@ -125,12 +126,12 @@ public class TestApp {
 		radioPanel.add(rb3);
 		radioPanel.add(rb4);
 		
-		DefaultListModel<String> listModel=new DefaultListModel<String>();
+		DefaultListModel listModel=new DefaultListModel();
 		listModel.addElement("Alpha");
 		listModel.addElement("Beta");
 		listModel.addElement("Gamma");
 		listModel.addElement("Delta");
-		JList<String> jl1=new JList<String>(listModel);
+		JList jl1=new JList(listModel);
 		jl1.setCellRenderer(new SteamPunkCellRenderer());
 		
 		split2.add(JSplitPane.TOP,radioPanel);
