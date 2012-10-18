@@ -20,9 +20,11 @@
 	<repositories>
 		<repository>
 			<id>clojars.org</id>
-			<url>http://clojars.org/repo</url>
+			<name>Clojars repository</name>
+			<url>https://clojars.org/repo</url>
 		</repository>
 	</repositories>
+
 	
 	<dependencies>
 		<dependency>
