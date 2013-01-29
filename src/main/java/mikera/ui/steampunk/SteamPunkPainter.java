@@ -9,7 +9,7 @@ import javax.swing.plaf.synth.SynthConstants;
 import javax.swing.plaf.synth.SynthContext;
 import javax.swing.plaf.synth.SynthPainter;
 
-import mikera.ui.Draw;
+import mikera.gui.Draw;
  
 public class SteamPunkPainter extends SynthPainter {
 	public static final Color MENU_COLOR = new Color(170,100,0);

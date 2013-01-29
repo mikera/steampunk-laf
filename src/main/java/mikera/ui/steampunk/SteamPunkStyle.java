@@ -19,7 +19,7 @@ import javax.swing.plaf.synth.SynthGraphicsUtils;
 import javax.swing.plaf.synth.SynthPainter;
 import javax.swing.plaf.synth.SynthStyle;
 
-import mikera.ui.BufferedImageIcon;
+import mikera.gui.BufferedImageIcon;
 import mikera.util.Resource;
 
 public class SteamPunkStyle extends SynthStyle {

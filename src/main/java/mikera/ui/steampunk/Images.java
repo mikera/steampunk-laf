@@ -1,9 +1,9 @@
 package mikera.ui.steampunk;
 
 import java.awt.image.BufferedImage;
-import mikera.image.ImageFilters;
-import mikera.image.ImageUtils;
-import mikera.image.Op;
+import mikera.image.generation.ImageFilters;
+import mikera.image.generation.ImageUtils;
+import mikera.image.generation.Op;
 
 public class Images {
 	public static BufferedImage BRASS_PANEL = null;
