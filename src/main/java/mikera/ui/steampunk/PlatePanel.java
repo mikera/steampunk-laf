@@ -4,7 +4,7 @@ import java.awt.Graphics;
 
 import javax.swing.JPanel;
 
-import mikera.ui.Draw;
+import mikera.gui.Draw;
 
 @SuppressWarnings("serial")
 public class PlatePanel extends JPanel {

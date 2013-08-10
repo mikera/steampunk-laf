@@ -6,7 +6,7 @@ import java.awt.Insets;
 
 import javax.swing.border.Border;
 
-import mikera.ui.Draw;
+import mikera.gui.Draw;
 
 public class SteamPunkBorder implements Border {
 	public static final int BORDER_SIZE=8;
