@@ -42,6 +42,7 @@ public class TestApp {
 		// left top
 		JButton b1=new JButton("Test Button!!");
 		b1.addActionListener(new ActionListener() {
+			@Override
 			public void actionPerformed(ActionEvent e) {
 				JOptionPane.showInputDialog("Enter some text:");
 			}		
@@ -68,6 +69,7 @@ public class TestApp {
 		
 		JButton b2=new JButton("Open...");
 		b2.addActionListener(new ActionListener() {
+			@Override
 			public void actionPerformed(ActionEvent e) {
 				JFileChooser c=new JFileChooser();
 				c.showOpenDialog(null);
@@ -86,6 +88,7 @@ public class TestApp {
 		p1.add(cb1,"cell 2 0 1 1, growx");
 		JCheckBox cb2=new JCheckBox("Enable/disable");
 		cb2.addItemListener(new ItemListener() {
+			@Override
 			public void itemStateChanged(ItemEvent e) {
 				if (e.getStateChange()==ItemEvent.SELECTED)	{
 					cb1.setEnabled(false);

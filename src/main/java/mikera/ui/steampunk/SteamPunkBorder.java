@@ -27,16 +27,19 @@ public class SteamPunkBorder implements Border {
 	
 	public static final Insets INSETS=new Insets(BORDER_SIZE,BORDER_SIZE,BORDER_SIZE,BORDER_SIZE);
 	
+	@Override
 	public void paintBorder(Component c, Graphics g, int x, int y, int width,
 			int height) {
 		Draw.drawImageWithBorder(g, x, y, width, height, Images.BRASS_PANEL,BORDER_SIZE,fill);		
 
 	}
 
+	@Override
 	public Insets getBorderInsets(Component c) {
 		return INSETS;
 	}
 
+	@Override
 	public boolean isBorderOpaque() {
 		return false;
 	}
