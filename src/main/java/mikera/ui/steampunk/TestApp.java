@@ -142,8 +142,8 @@ public class TestApp {
 		p1.add(split2,"cell 2 1 1 1,grow");
 		
 		
-		// Tabbed panel at bottom
-		JTabbedPane tabbed=new JTabbedPane();
+		// Horz Tabbed panel at bottom
+		JTabbedPane tabbedH=new JTabbedPane();
 		JPanel tab1=new JPanel();
 		tab1.add(new JButton("Alpha button"));
 
@@ -155,11 +155,29 @@ public class TestApp {
 		tab3.add(new JButton("Gamma button"));
 
 		
-		tabbed.addTab("Alpha", tab1);
-		tabbed.addTab("Beta", tab2);
-		tabbed.addTab("Gamma", tab3);
-		p1.add(tabbed,"cell 0 2 3 1,grow");
+		tabbedH.addTab("Alpha", tab1);
+		tabbedH.addTab("Beta", tab2);
+		tabbedH.addTab("Gamma", tab3);
+		p1.add(tabbedH,"cell 0 2 3 1,grow");
 		
+		// 
+		JTabbedPane tabbedV=new JTabbedPane();
+		tabbedV.setTabPlacement(JTabbedPane.LEFT);
+		JPanel tabv1=new JPanel();
+		tabv1.add(new JButton("Alpha button"));
+
+		JPanel tabv2=new JPanel();
+		tabv2.add(new JButton("Beta button"));
+
+		JPanel tabv3=new JPanel();
+		tabv3.setBorder(SteamPunkBorder.FILLED_BORDER);
+		tabv3.add(new JButton("Gamma button"));
+
+		
+		tabbedV.addTab("Alpha", tabv1);
+		tabbedV.addTab("Beta", tabv2);
+		tabbedV.addTab("Gamma", tabv3);
+		p1.add(tabbedV,"cell 0 3 3 1,grow");
 		
 		// menu
 		JMenuBar menuBar=new JMenuBar();
