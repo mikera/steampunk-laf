@@ -4,6 +4,8 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 
+import javax.swing.AbstractButton;
+import javax.swing.JTabbedPane;
 import javax.swing.SwingConstants;
 import javax.swing.plaf.synth.SynthConstants;
 import javax.swing.plaf.synth.SynthContext;
@@ -493,7 +495,12 @@ public class SteamPunkPainter extends SynthPainter {
 	
 	@Override public void paintTabbedPaneTabBackground(SynthContext context, Graphics g, int x, int y, int w, int h, int tabIndex) {
 		if ((context.getComponentState()&SynthConstants.SELECTED)!=0) {
-			drawButton(context,g,x,y,w,h+10);
+			JTabbedPane tp=(JTabbedPane) context.getComponent();
+			switch (tp.getTabPlacement()) {
+			case JTabbedPane.LEFT: w+=10; break;
+			case JTabbedPane.TOP: h+=10; break;
+			}
+			drawButton(context,g,x,y,w,h);
 		} else {
 			drawButton(context,g,x,y+3,w,h-3);
 		}
@@ -540,11 +547,21 @@ public class SteamPunkPainter extends SynthPainter {
 	}
 	
 	@Override public void paintToggleButtonBackground(SynthContext context, Graphics g, int x, int y, int w, int h) {
-		drawUnrecognised(context,g,x,y,w,h);
+		BufferedImage img=Images.BUTTON_NORMAL;
+		AbstractButton comp=(AbstractButton) context.getComponent();
+		if (!comp.isEnabled()) {
+			img=Images.BUTTON_DISABLED;
+		} else if (comp.isSelected()) {
+			img=Images.BUTTON_PRESSED;
+		} else if ((context.getComponentState()&SynthConstants.MOUSE_OVER)!=0) {
+			img=Images.BUTTON_HIGHLIGHT;
+		}
+	
+		Draw.drawImageWithBorder(g,x,y,w,h,img,5,true);
 	}
 	
 	@Override public void paintToggleButtonBorder(SynthContext context, Graphics g, int x, int y, int w, int h) {
-		drawUnrecognisedBorder(context,g,x,y,w,h);
+		paintButtonBorder(context,g,x,y,w,h);
 	}
 	
 	@Override public void paintToolBarBackground(SynthContext context, Graphics g, int x, int y, int w, int h) {

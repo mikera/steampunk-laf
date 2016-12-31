@@ -31,7 +31,7 @@ public class TestApp {
 		MigLayout layout=new MigLayout(
 				"insets 5 5 5 5",
 			    "[150!][200:2000:][250!]",
-			    "[100!][100:1000:, top][250!]");
+			    "[100!][100:1500:, top][250!]");
 		
 		// main panel over whole screen
 		JPanel p1=new JPanel();
@@ -171,7 +171,13 @@ public class TestApp {
 
 		JPanel tabv3=new JPanel();
 		tabv3.setBorder(SteamPunkBorder.FILLED_BORDER);
-		tabv3.add(new JButton("Gamma button"));
+		ButtonGroup gammaGroup=new ButtonGroup();
+		JToggleButton jtb1 = new JToggleButton("Gamma toggle button 1");
+		JToggleButton jtb2 = new JToggleButton("Gamma toggle button 2");
+		gammaGroup.add(jtb1);
+		gammaGroup.add(jtb2);
+		tabv3.add(jtb1);
+		tabv3.add(jtb2);
 
 		
 		tabbedV.addTab("Alpha", tabv1);
@@ -188,7 +194,7 @@ public class TestApp {
 		
 		
 		// final frame launch
-		frame.setSize(800,600);
+		frame.setSize(1024,1024);
 		frame.setVisible(true);
 		frame.validate();
 		

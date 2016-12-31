@@ -57,7 +57,9 @@ public class SteamPunkStyle extends SynthStyle {
 		Region region=context.getRegion();
 		if (	(region==Region.LABEL)
 				||(region==Region.CHECK_BOX)
-				||(region==Region.RADIO_BUTTON)) {
+				||(region==Region.RADIO_BUTTON)
+				||(region==Region.TEXT_AREA)
+				||(region==Region.TEXT_FIELD)) {
 			JComponent c= context.getComponent();
 			if (!c.isEnabled()) return COLOUR_DISABLED_TEXT;
 			return COLOUR_GOLD_TEXT;
@@ -174,7 +176,7 @@ public class SteamPunkStyle extends SynthStyle {
 	static {
 		try {
 			FONT=Font.createFont(Font.TRUETYPE_FONT, Resource.getResourceAsStream("fonts/GenR102.TTF"));
-			FONT=FONT.deriveFont(Font.BOLD,15.0f);
+			FONT=FONT.deriveFont(Font.BOLD,16.0f);
 			LARGE_FONT=FONT.deriveFont(Font.BOLD,22.0f);
 			HUGE_FONT=FONT.deriveFont(Font.BOLD,40.0f);
 		} catch (Throwable e) {
